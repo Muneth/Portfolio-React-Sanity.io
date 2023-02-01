@@ -3,9 +3,9 @@ import React from "react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { RxResume } from "react-icons/rx";
 
-const SocialMedia = () => {
+const SocialMediaMobile = () => {
 	return (
-		<div className='app__social'>
+		<div className='app__social-mobile'>
 			<div>
 				<a
 					href='https://www.linkedin.com/in/muneth/'
@@ -31,4 +31,4 @@ const SocialMedia = () => {
 	);
 };
 
-export default SocialMedia;
+export default SocialMediaMobile;

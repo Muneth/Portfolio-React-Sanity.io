@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
+import { SocialMediaMobile } from "../../components";
 import { images } from "../../constants";
 import "./Navbar.scss";
 
@@ -15,14 +16,12 @@ const Navbar = () => {
 				<img src={images.muneetlogo2} alt='logo' />
 			</div>
 			<ul className='app__navbar-links'>
-				{["home", "about", "work", "skills", "contact"].map(
-					(item, index) => (
-						<li className='app__flex p-text' key={index}>
-							<div />
-							<a href={`#${item}`}>{item}</a>
-						</li>
-					),
-				)}
+				{["home", "about", "work", "skills", "contact"].map((item, index) => (
+					<li className='app__flex p-text' key={index}>
+						<div />
+						<a href={`#${item}`}>{item}</a>
+					</li>
+				))}
 			</ul>
 
 			<div className='app__navbar-menu'>
@@ -35,19 +34,15 @@ const Navbar = () => {
 					>
 						<HiX onClick={() => setToggle(false)} />
 						<ul className='app__navbar-links'>
-							{["home", "about", "work", "skills", "contact"].map(
-								(item) => (
-									<li key={item}>
-										<a
-											href={`#${item}`}
-											onClick={() => setToggle(false)}
-										>
-											{item}
-										</a>
-									</li>
-								),
-							)}
+							{["home", "about", "work", "skills", "contact"].map((item) => (
+								<li key={item}>
+									<a href={`#${item}`} onClick={() => setToggle(false)}>
+										{item}
+									</a>
+								</li>
+							))}
 						</ul>
+						{/* <SocialMediaMobile /> */}
 					</motion.div>
 				)}
 			</div>
