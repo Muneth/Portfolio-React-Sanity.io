@@ -1,7 +1,10 @@
 import React from "react";
 
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { RxResume } from "react-icons/rx";
+import { GiDiploma } from "react-icons/gi";
+import Pdf from "../assets/CV.pdf";
+import diploma from "../assets/diploma.jpeg";
 
 const SocialMedia = () => {
 	return (
@@ -14,18 +17,22 @@ const SocialMedia = () => {
 				>
 					<BsLinkedin />
 				</a>
-				{/* <BsLinkedin /> */}
 			</div>
 			<div>
 				<a href='https://github.com/Muneth' target='_blank' rel='noreferrer'>
 					<BsGithub />
 				</a>
-				{/* <BsGithub /> */}
 			</div>
-			<div>
-				{/* <a href='../assets/cv.png' target='_blank'>
-				</a> */}
+			{/* <div>
+				<a href={Pdf} target='_blank' rel='noreferrer'>
+					<span>CV</span>
 				<RxResume />
+				</a>
+			</div> */}
+			<div>
+				<a href={diploma} target='_blank' rel='noreferrer'>
+			<GiDiploma />
+				</a>
 			</div>
 		</div>
 	);

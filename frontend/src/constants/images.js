@@ -21,7 +21,6 @@ import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
-import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 import adidas from "../assets/adidas.png";
@@ -36,6 +35,9 @@ import cover from "../assets/cover.png";
 import muneetlogo from "../assets/muneetlogo.png";
 import muneetlogo2 from "../assets/muneet-monochrome.svg";
 import muneetcoverphoto from "../assets/muneetcoverphoto.png";
+import angular from "../assets/angular.png";
+import spring from "../assets/spring-img.png";
+import symfony from "../assets/symfony.png";
 
 export default {
 	email,
@@ -61,7 +63,6 @@ export default {
 	about02,
 	about03,
 	about04,
-	profile,
 	circle,
 	logo,
 	adidas,
@@ -76,4 +77,7 @@ export default {
 	muneetlogo,
 	muneetlogo2,
 	muneetcoverphoto,
+	angular,
+	spring,
+	symfony,
 };

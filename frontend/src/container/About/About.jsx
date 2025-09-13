@@ -1,32 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-// import { images } from "../../constants";
 import { urlFor, client } from "../../client";
 import "./About.scss";
 import { AppWrap, MotionWrap } from "../../wrapper";
-
-// const about = [
-// 	{
-// 		title: "Front End",
-// 		description: "HTML, CSS, JavaScript, React, Bootstrap, Tailwind CSS",
-// 		img: images.about01,
-// 	},
-// 	{
-// 		title: "Back End",
-// 		description: "Node.js, Express.js, MongoDB, MySQL",
-// 		imgUrl: images.about02,
-// 	},
-// 	{
-// 		title: "Tools",
-// 		description: "Git, Github, VS Code, Chrome Dev Tools, Postman",
-// 		img: images.about03,
-// 	},
-// 	{
-// 		title: "Other",
-// 		description: "Figma, Adobe Photoshop, Adobe Illustrator",
-// 		img: images.about04,
-// 	},
-// ];
 
 const About = () => {
 	const [abouts, setAbouts] = useState([]);
@@ -42,7 +18,7 @@ const About = () => {
 		<>
 			<h2 className='head-text'>
 				I Know That
-				<span> Good Design</span>
+				<span> Good App</span>
 				<br />
 				means
 				<span> Good Code</span>
